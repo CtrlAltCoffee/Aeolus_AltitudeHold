@@ -100,46 +100,6 @@ void getReadings() {
 
 }
 
-void logReadings() {
-    
-    // Print acceleration info
-    Serial.print("Acceleration X: ");
-	Serial.print(acc[0]);
-	Serial.print(", Y: ");
-	Serial.print(acc[1]);
-	Serial.print(", Z: ");
-	Serial.print(acc[2]);
-	Serial.println("m/s^2");
-
-    // Print angular velocity info
-    Serial.print("Rotation X: ");
-    Serial.print(rot[0]);    
-    Serial.print(", Y: ");
-    Serial.print(rot[1]); 
-    Serial.print(", Z: ");
-    Serial.print(rot[2]);
-    Serial.println("rad/s");
-
-    // Print angular orientation info
-    Serial.print("Orientation Yaw: ");
-    Serial.print(state[0]);    
-    Serial.print(", Pitch: ");
-    Serial.print(state[1]); 
-    Serial.print(", Roll: ");
-    Serial.print(state[2]);
-    Serial.println("degrees");
-
-    // Print pressure and altitude info
-    Serial.print("Pressure: ");
-    Serial.print(bar);    
-    Serial.println("hPa");
-    Serial.print("Altitude: ");
-    Serial.print(alt);
-    Serial.println("m");
-
-    Serial.println("");
-}
-
 void receiveRadio(int controls[4]) {
 
 	altHld = true;

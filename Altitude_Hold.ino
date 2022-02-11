@@ -151,7 +151,6 @@ void loop() {
     timer = micros();
 
     getReadings(); // Update sensor values
-    logReadings(); // Output data to Serial Monitor
     receiveRadio(controls); // Receive controller signals from RF
 
     if(altHld)
